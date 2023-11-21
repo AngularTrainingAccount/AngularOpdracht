@@ -1,0 +1,5 @@
+
+
+<div class="memoryGame">
+    <ct-memory-card *ngFor="let imgUrl of this.images" [index]="this.images.indexOf(imgUrl)" (cardClicked)="cardHasBeenClicked($event)" [imageUrl]="'assets/images/' + imgUrl + '.jpg'"></ct-memory-card>
+</div>
